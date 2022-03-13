@@ -10,6 +10,8 @@ int main() {
     InsertionSort is;
 
     rw.readFile("Array.txt", is.arr);
+    is.displayArray();
+    cout << endl;
     is.insertionSort();
     is.displayArray();
     rw.writeFile(is.arr);
