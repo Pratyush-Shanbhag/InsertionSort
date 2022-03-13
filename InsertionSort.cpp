@@ -27,5 +27,5 @@ void InsertionSort::displayArray() {
         cout << arr[i] << " ";
     }
 
-    cout << arr[9] << "]" << endl; 
+    cout << arr[9] << "]\n" << endl; 
 }
