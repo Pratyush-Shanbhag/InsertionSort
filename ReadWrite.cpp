@@ -18,5 +18,9 @@ int* ReadWrite::readFile(string fileName) {
 }
 
 void writeFile(int arr[10]) {
+    ofstream outfile("SortedArray.txt");
 
+    for(int i = 0; i < 10; i++) {
+        outfile << arr[i] << endl;
+    }
 }
