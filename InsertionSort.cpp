@@ -3,6 +3,12 @@
 
 using namespace std;
 
+void InsertionSort::copyArray(int carr[10]) {
+    for(int i = 0; i < 10; i++) {
+        arr[i] = carr[i];
+    }
+}
+
 void InsertionSort::insertionSort() {
     int count;
     int temp;
