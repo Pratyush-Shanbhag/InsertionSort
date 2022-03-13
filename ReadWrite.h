@@ -1,10 +1,10 @@
 #ifndef READWRITE_H
 #define READWRITE_H
 
-class InsertionSort {
+class ReadWrite {
 
     public:
-        int* readFile();
+        int* readFile(string);
         void writeFile(int [10]);
 };
 
