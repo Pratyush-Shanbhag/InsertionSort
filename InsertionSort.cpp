@@ -11,12 +11,12 @@ void InsertionSort::insertionSort() {
         count = i - 1;
         temp = arr[i];
 
-        while(count >= 0 && arr[count] < temp) {
+        while(count >= 0 && arr[count] > temp) {
             arr[count+1] = arr[count];
             count--;
         }
 
-        arr[count] = temp;
+        arr[count+1] = temp;
     }
 }
 
