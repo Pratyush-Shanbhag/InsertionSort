@@ -9,8 +9,9 @@ int main() {
     ReadWrite rw;
     InsertionSort is;
 
-    is.copyArray(rw.readFile("array.txt"));
+    rw.readFile("Array.txt", is.arr);
     is.insertionSort();
+    is.displayArray();
     rw.writeFile(is.arr);
     return 0;
 }

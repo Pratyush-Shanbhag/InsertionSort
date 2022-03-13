@@ -4,9 +4,8 @@
 
 using namespace std;
 
-int* ReadWrite::readFile(string fileName) {
+int* ReadWrite::readFile(string fileName, int arr[10]) {
     ifstream infile(fileName);
-    int arr[10];
     int count = 0;
     while(!infile.fail()) {
         infile >> arr[count++];
@@ -17,7 +16,7 @@ int* ReadWrite::readFile(string fileName) {
     return arr;
 }
 
-void writeFile(int arr[10]) {
+void ReadWrite::writeFile(int arr[10]) {
     ofstream outfile("SortedArray.txt");
 
     for(int i = 0; i < 10; i++) {
