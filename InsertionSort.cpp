@@ -23,9 +23,9 @@ void InsertionSort::insertionSort() {
 void InsertionSort::displayArray() {
     cout << "Array:\n[";
 
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 9; i++) {
         cout << arr[i] << " ";
     }
 
-    cout << "]" << endl; 
+    cout << arr[9] << "]" << endl; 
 }
