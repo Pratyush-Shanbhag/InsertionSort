@@ -18,4 +18,14 @@ void InsertionSort::insertionSort() {
 
         arr[count] = temp;
     }
-} 
+}
+
+void InsertionSort::displayArray() {
+    cout << "Array:\n[";
+
+    for (int i = 0; i < 10; i++) {
+        cout << arr[i] << " ";
+    }
+
+    cout << "]" << endl; 
+}
