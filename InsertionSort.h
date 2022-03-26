@@ -3,8 +3,6 @@
 
 class InsertionSort {
 
-    private:
-        
     public:
         int arr[10];
         void insertionSort();
